@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peakfinity Enterprise — Ghana Agric Export: Shea Butter, Soybeans, Cashew</title>
+<meta name="description" content="Peakfinity Enterprise sources, aggregates and exports premium shea butter, soybeans and cashew nuts from Ghana to global buyers.">
+<meta name="theme-color" content="#1c140d">
+<link rel="canonical" href="https://peakfinityenterprise.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Peakfinity Enterprise — Ghana Agric Export House">
+<meta property="og:description" content="Sourcing and exporting premium shea butter, soybeans and cashew nuts from cooperative networks across Ghana to global buyers.">
+<meta property="og:url" content="https://peakfinityenterprise.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Peakfinity Enterprise",
+  "url": "https://peakfinityenterprise.vercel.app/",
+  "description": "Peakfinity Enterprise sources, aggregates and exports premium shea butter, soybeans and cashew nuts from Ghana to international buyers.",
+  "address": { "@type": "PostalAddress", "addressCountry": "GH" },
+  "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "info@peakfinityenterprise.com" }
+}
+</script>
+<style>
+  :root{
+    --ink:#1b2430;
+    --ink-2:#0f2a5e;
+    --paper:#f5f4f1;
+    --paper-2:#ffffff;
+    --cream:#eef1f6;
+    --navy:#163c85;
+    --navy-deep:#0f2a5e;
+    --green:#2b381a;
+    --green-2:#3f5228;
+    --accent-dark:#d3b06a;
+    --ink-dim: rgba(27,36,48,0.62);
+    --cream-dim: rgba(238,241,246,0.72);
+    --line: rgba(22,44,85,0.14);
+    --line-dark: rgba(238,241,246,0.16);
+    --shadow: 0 24px 54px -26px rgba(15,42,94,0.28);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:'Archivo',sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  h1,h2,h3,h4{font-family:'Fraunces',serif; font-weight:600; margin:0; color:var(--ink); letter-spacing:-0.01em;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%;}
+  .eyebrow{font-family:'Space Mono',monospace; text-transform:uppercase; letter-spacing:0.15em; font-size:0.7rem; color:var(--navy);}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+  section{position:relative;}
+  :focus-visible{outline:2px solid var(--navy); outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  /* grain */
+  body::before{
+    content:""; position:fixed; inset:0; z-index:200; pointer-events:none; opacity:0.035; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* dark sections */
+  .dark{background:var(--navy-deep); color:var(--cream-dim);}
+  .dark h1,.dark h2,.dark h3,.dark h4{color:var(--paper-2);}
+  .dark .eyebrow{color:var(--accent-dark);}
+  .dark p{color:var(--cream-dim);}
+
+  /* reveal */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity 0.7s cubic-bezier(.2,.7,.2,1), transform 0.7s cubic-bezier(.2,.7,.2,1);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  .reveal-stagger .r-item{opacity:0; transform:translateY(20px); transition:opacity 0.6s cubic-bezier(.2,.7,.2,1), transform 0.6s cubic-bezier(.2,.7,.2,1);}
+  .reveal-stagger.in .r-item{opacity:1; transform:translateY(0);}
+  .reveal-stagger.in .r-item:nth-child(1){transition-delay:0.02s;}
+  .reveal-stagger.in .r-item:nth-child(2){transition-delay:0.1s;}
+  .reveal-stagger.in .r-item:nth-child(3){transition-delay:0.18s;}
+  .reveal-stagger.in .r-item:nth-child(4){transition-delay:0.26s;}
+
+  /* NAV */
+  header{position:sticky; top:0; z-index:80; background:rgba(15,42,94,0.82); backdrop-filter:blur(10px); border-bottom:1px solid var(--line-dark); transition:background 0.3s, box-shadow 0.3s, padding 0.3s;}
+  header.scrolled{background:rgba(9,22,50,0.96); box-shadow:0 8px 24px -12px rgba(9,22,50,0.5);}
+  header.scrolled nav{padding-top:10px; padding-bottom:10px;}
+  nav{display:flex; align-items:center; justify-content:space-between; padding:14px 28px; max-width:1180px; margin:0 auto;}
+  .logo{font-family:'Fraunces',serif; font-weight:600; font-size:1.1rem; display:flex; align-items:center; gap:12px; color:var(--paper-2);}
+  .logo .mark{width:40px; height:40px; flex-shrink:0; object-fit:contain;}
+  .navlinks{display:flex; gap:32px; font-size:0.9rem;}
+  .navlinks a{opacity:0.78; color:var(--cream-dim); position:relative; padding-bottom:4px; transition:opacity 0.2s;}
+  .navlinks a::after{content:""; position:absolute; left:0; bottom:0; height:1px; width:0; background:var(--accent-dark); transition:width 0.28s cubic-bezier(.2,.7,.2,1);}
+  .navlinks a:hover, .navlinks a.active{opacity:1; color:var(--paper-2);}
+  .navlinks a:hover::after, .navlinks a.active::after{width:100%;}
+  .navcta{font-family:'Space Mono',monospace; font-size:0.74rem; border:1px solid var(--accent-dark); color:var(--accent-dark); padding:9px 18px; border-radius:2px; letter-spacing:0.04em; transition:all 0.2s;}
+  .navcta:hover{background:var(--accent-dark); color:var(--ink);}
+  .menu-toggle{display:none; background:none; border:none; color:var(--paper-2); font-size:1.5rem; cursor:pointer;}
+  .navlinks.open{display:flex;}
+
+  /* HERO SLIDESHOW */
+  .hero{position:relative; height:min(92vh,780px); overflow:hidden; background:var(--navy-deep);}
+  .hero-slides{position:absolute; inset:0;}
+  .hero-slide{position:absolute; inset:0; opacity:0; transform:scale(1.08); transition:opacity 1.4s ease; animation:kenburns 9s ease-in-out forwards;}
+  .hero-slide img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(0.92) brightness(0.78);}
+  .hero-slide.active{opacity:1;}
+  @keyframes kenburns{ from{transform:scale(1.12);} to{transform:scale(1);} }
+  .hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,42,94,0.35) 0%, rgba(15,42,94,0.55) 55%, rgba(9,22,50,0.92) 100%); z-index:1;}
+  .hero-content{position:relative; z-index:2; height:100%; display:flex; flex-direction:column; justify-content:center; max-width:1180px; margin:0 auto; padding:0 28px;}
+  .hero h1{font-size:clamp(2.3rem,5vw,4.1rem); line-height:1.05; color:var(--paper-2); margin:16px 0 20px; max-width:820px;}
+  .hero p.lede{font-size:1.1rem; line-height:1.65; color:var(--cream-dim); max-width:540px; margin-bottom:32px;}
+  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap;}
+  .btn{font-family:'Space Mono',monospace; font-size:0.8rem; letter-spacing:0.04em; padding:14px 26px; border-radius:2px; display:inline-block; transition:all 0.2s;}
+  .btn-primary{background:var(--navy); color:#fff; border:1px solid var(--navy);}
+  .btn-primary:hover{background:var(--navy-deep); border-color:var(--navy-deep); transform:translateY(-2px);}
+  .btn-ghost{border:1px solid rgba(244,234,212,0.4); color:var(--paper-2);}
+  .btn-ghost:hover{border-color:var(--accent-dark); color:var(--accent-dark);}
+  .hero-dots{position:absolute; right:28px; bottom:26px; z-index:3; display:flex; gap:8px;}
+  .hero-dots button{width:8px; height:8px; border-radius:50%; border:none; background:rgba(244,234,212,0.35); cursor:pointer; padding:0; transition:background 0.2s, transform 0.2s;}
+  .hero-dots button.active{background:var(--accent-dark); transform:scale(1.3);}
+  .scroll-cue{position:absolute; left:28px; bottom:28px; z-index:3; font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--cream-dim); letter-spacing:0.08em; display:flex; align-items:center; gap:8px;}
+  .scroll-cue .line{width:1px; height:26px; background:rgba(244,234,212,0.4); animation:cuemove 1.8s ease-in-out infinite;}
+  @keyframes cuemove{0%,100%{transform:scaleY(1); opacity:0.5;} 50%{transform:scaleY(0.6); opacity:1;}}
+
+  /* TICKER */
+  .ticker-wrap{background:var(--navy-deep); overflow:hidden; padding:10px 0;}
+  .ticker-track{display:flex; white-space:nowrap; animation:ticker-scroll 24s linear infinite;}
+  .ticker-track span{font-family:'Space Mono',monospace; font-size:0.74rem; letter-spacing:0.09em; color:var(--cream-dim); padding:0 24px; font-weight:700;}
+  .ticker-track span.dot-sep{opacity:0.5; font-weight:400;}
+  @keyframes ticker-scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+  .ticker-wrap:hover .ticker-track{animation-play-state:paused;}
+
+  .stat-strip{display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .stat-cell{padding:26px 22px; border-right:1px solid var(--line); text-align:center;}
+  .stat-cell:last-child{border-right:none;}
+  .stat-cell .num{font-family:'Fraunces',serif; font-size:1.9rem; color:var(--navy); font-weight:600; display:inline-block;}
+  .stat-cell .lbl{font-size:0.8rem; color:var(--ink-dim); margin-top:4px;}
+
+  /* ABOUT */
+  .about{padding:100px 0;}
+  .about-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:center;}
+  .about h2{font-size:2.15rem; line-height:1.15; margin:14px 0 20px;}
+  .about p{color:var(--ink-dim); line-height:1.7; font-size:1.02rem; margin-bottom:14px;}
+  .pillar-list{display:flex; flex-direction:column;}
+  .pillar{padding:22px 0; border-bottom:1px solid var(--line); display:grid; grid-template-columns:34px 1fr; gap:16px; align-items:start;}
+  .pillar:first-child{padding-top:0;}
+  .pillar .pnum{font-family:'Space Mono',monospace; font-size:0.85rem; color:var(--navy); padding-top:3px;}
+  .pillar h4{font-size:1.03rem; margin-bottom:6px; color:var(--ink);}
+  .pillar p{margin:0; font-size:0.92rem; color:var(--ink-dim); line-height:1.6;}
+
+  /* PROCESS (scrollytelling, dark) */
+  .process{padding:110px 0;}
+  .process-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start;}
+  .process-sticky{position:sticky; top:90px; height:440px; border-radius:8px; overflow:hidden; box-shadow:0 30px 70px -30px rgba(0,0,0,0.55);}
+  .process-sticky img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 0.6s ease, transform 8s ease;}
+  .process-sticky img.active{opacity:1; transform:scale(1.06);}
+  .process-steps{display:flex; flex-direction:column; gap:2px;}
+  .p-step{padding:44px 0 44px 30px; border-left:2px solid var(--line-dark); position:relative; opacity:0.4; transition:opacity 0.4s;}
+  .p-step.active{opacity:1;}
+  .p-step::before{content:attr(data-n); position:absolute; left:-15px; top:44px; width:28px; height:28px; border-radius:50%; background:var(--navy-deep); border:2px solid var(--line-dark); color:var(--cream-dim); font-family:'Space Mono',monospace; font-size:0.72rem; display:flex; align-items:center; justify-content:center; transition:border-color 0.4s, background 0.4s, color 0.4s;}
+  .p-step.active::before{border-color:var(--accent-dark); background:var(--accent-dark); color:var(--ink);}
+  .p-step h4{font-size:1.25rem; margin-bottom:10px;}
+  .p-step p{font-size:0.95rem; max-width:420px;}
+
+  /* WHY US (bento) */
+  .why{padding:100px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--paper-2);}
+  .why-head{max-width:600px; margin-bottom:52px;}
+  .why-head h2{font-size:2.05rem; margin:14px 0;}
+  .why-head p{color:var(--ink-dim); line-height:1.6;}
+  .why-grid{display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:150px; gap:10px;}
+  .why-card{border:1px solid var(--line); border-radius:6px; background:var(--paper); padding:26px 24px; position:relative; overflow:hidden; transition:transform 0.3s cubic-bezier(.2,.7,.2,1), box-shadow 0.3s, border-color 0.3s;}
+  .why-card:hover{transform:translateY(-4px); box-shadow:var(--shadow); border-color:var(--navy);}
+  .why-card::before{content:attr(data-idx); position:absolute; right:14px; top:2px; font-family:'Fraunces',serif; font-size:3.4rem; font-weight:600; color:var(--navy); opacity:0.08; line-height:1;}
+  .why-card h4{font-size:1.02rem; margin-bottom:10px; color:var(--navy-deep); position:relative;}
+  .why-card p{font-size:0.9rem; color:var(--ink-dim); line-height:1.6; margin:0; position:relative;}
+  .why-card.big{grid-column:1/3; grid-row:1/3;}
+  .why-card.big h4{font-size:1.3rem;}
+  .why-card.big::before{font-size:5.2rem;}
+  .why-card.wide-top{grid-column:3/5; grid-row:1/2;}
+  .why-card.mid{grid-column:3/4; grid-row:2/3;}
+  .why-card.tall{grid-column:4/5; grid-row:2/4;}
+  .why-card.wide-bottom{grid-column:1/3; grid-row:3/4;}
+  .why-card.small{grid-column:3/4; grid-row:3/4;}
+  .pulse-dot{width:8px; height:8px; border-radius:50%; background:var(--green-2); display:inline-block; margin-right:8px; animation:pulse 2.2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1; transform:scale(1);} 50%{opacity:0.45; transform:scale(1.5);}}
+
+  /* PRODUCTS */
+  .products{padding:100px 0;}
+  .products-head{margin-bottom:52px; max-width:620px;}
+  .products-head h2{font-size:2.05rem;}
+  .lot-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  .lot-card{border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--paper-2); display:flex; flex-direction:column; transition:transform 0.3s cubic-bezier(.2,.7,.2,1), box-shadow 0.3s, border-color 0.3s; position:relative;}
+  .lot-card:hover{transform:translateY(-6px); box-shadow:var(--shadow); border-color:var(--navy);}
+  .lot-photo-wrap{height:200px; overflow:hidden; position:relative; perspective:800px;}
+  .lot-photo{width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease; transform-origin:center;}
+  .lot-card:hover .lot-photo{transform:scale(1.08);}
+  .lot-tag{position:absolute; top:14px; left:14px; font-family:'Space Mono',monospace; font-size:0.68rem; letter-spacing:0.08em; color:#fff; padding:4px 10px; border-radius:2px; z-index:2;}
+  .lot-card.shea .lot-tag{background:var(--navy);}
+  .lot-card.soy .lot-tag{background:var(--green-2);}
+  .lot-card.cashew .lot-tag{background:var(--navy-deep);}
+  .lot-top{padding:20px 26px 0; position:relative;}
+  .lot-top::before{content:attr(data-num); position:absolute; right:22px; top:10px; font-family:'Fraunces',serif; font-size:3.4rem; font-weight:600; color:var(--navy); opacity:0.08; line-height:1;}
+  .lot-card h3{font-size:1.3rem; margin-bottom:6px;}
+  .lot-grade{font-size:0.84rem; color:var(--ink-dim); margin-bottom:14px;}
+  .lot-card p.desc{font-size:0.89rem; color:var(--ink-dim); line-height:1.6; padding:0 26px; margin:0 0 16px;}
+  .lot-specs{list-style:none; margin:0; padding:0 26px 20px; font-size:0.84rem;}
+  .lot-specs li{padding:8px 0; border-top:1px solid var(--line); display:flex; justify-content:space-between; color:var(--ink-dim);}
+  .lot-specs li b{color:var(--ink); font-weight:500;}
+  .lot-more{max-height:0; overflow:hidden; padding:0 26px; transition:max-height 0.35s cubic-bezier(.2,.7,.2,1), padding 0.35s; font-size:0.86rem; color:var(--ink-dim); line-height:1.6; border-top:1px solid transparent;}
+  .lot-card.expanded .lot-more{max-height:160px; padding:16px 26px; border-top:1px solid var(--line);}
+  .lot-expand-btn{background:none; border:none; cursor:pointer; font-family:'Space Mono',monospace; font-size:0.74rem; color:var(--navy); padding:0 26px 14px; letter-spacing:0.03em; display:flex; align-items:center; gap:6px;}
+  .lot-expand-btn .chev{display:inline-block; transition:transform 0.3s;}
+  .lot-card.expanded .lot-expand-btn .chev{transform:rotate(180deg);}
+  .pack-thumb{width:56px; height:56px; object-fit:cover; border-radius:4px; float:left; margin:0 12px 6px 0; border:1px solid var(--line);}
+  .lot-foot{margin-top:auto; padding:16px 26px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; font-family:'Space Mono',monospace; font-size:0.76rem; color:var(--ink-dim);}
+  .lot-foot a{color:var(--navy);}
+
+  .spec-table-wrap{margin-top:60px; overflow-x:auto;}
+  table.spec-table{width:100%; border-collapse:collapse; font-size:0.87rem; min-width:560px;}
+  table.spec-table th, table.spec-table td{text-align:left; padding:14px 16px; border-bottom:1px solid var(--line);}
+  table.spec-table th{font-family:'Space Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--navy); font-weight:400;}
+  table.spec-table td{color:var(--ink-dim);}
+  table.spec-table td:first-child, table.spec-table th:first-child{color:var(--ink); font-weight:500;}
+
+  /* SOURCING */
+  .sourcing{padding:100px 0; background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .sourcing-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+  .sourcing h2{font-size:2.05rem; margin:14px 0 18px;}
+  .sourcing p{color:var(--ink-dim); line-height:1.7; margin-bottom:14px;}
+  .region-list{display:flex; flex-direction:column; gap:14px; margin-top:24px;}
+  .region{display:flex; justify-content:space-between; align-items:center; padding:15px 18px; border:1px solid var(--line); border-radius:4px; background:var(--paper);}
+  .region .rname{font-family:'Fraunces',serif; font-size:1rem; color:var(--ink);}
+  .region .rgoods{font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--navy);}
+  .sourcing-photo{border-radius:8px; overflow:hidden; position:relative; box-shadow:var(--shadow); height:420px;}
+  .sourcing-photo img{width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s ease;}
+  .sourcing-photo:hover img{transform:scale(1.05);}
+  .sourcing-photo figcaption{position:absolute; left:16px; bottom:14px; font-family:'Space Mono',monospace; font-size:0.68rem; color:#fff; background:rgba(28,20,13,0.72); padding:5px 10px; border-radius:2px; letter-spacing:0.05em;}
+
+  /* CONTACT */
+  .contact{padding:100px 0;}
+  .contact-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px;}
+  .contact h2{font-size:2.05rem; margin:14px 0 16px;}
+  .contact p.lede{color:var(--ink-dim); line-height:1.65; max-width:470px; margin-bottom:32px;}
+  .info-block{margin-bottom:26px;}
+  .info-block .eyebrow{display:block; margin-bottom:6px;}
+  .info-block div, .info-block a{font-size:0.97rem; line-height:1.6; color:var(--ink-dim);}
+  form{border:1px solid var(--line); border-radius:8px; padding:32px; background:var(--paper-2); box-shadow:var(--shadow);}
+  form h3{font-size:1.15rem; margin-bottom:20px;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;}
+  .form-row.full{grid-template-columns:1fr;}
+  label{display:block; font-size:0.75rem; font-family:'Space Mono',monospace; color:var(--ink-dim); margin-bottom:6px; letter-spacing:0.03em;}
+  input, select{width:100%; padding:11px 12px; background:var(--paper); border:1px solid var(--line); color:var(--ink); border-radius:3px; font-family:'Archivo',sans-serif; font-size:0.92rem;}
+  input:focus, select:focus{border-color:var(--navy);}
+  form button{width:100%; margin-top:6px; padding:15px; background:var(--navy); color:#fff; border:none; border-radius:3px; font-family:'Space Mono',monospace; font-size:0.84rem; letter-spacing:0.04em; cursor:pointer; transition:background 0.2s;}
+  form button:hover{background:var(--navy-deep);}
+  form button:disabled{opacity:0.6; cursor:progress;}
+  .form-note{font-size:0.75rem; color:var(--ink-dim); text-align:center; margin-top:12px;}
+  #form-success, #form-error{display:none; text-align:center; padding:36px 18px; font-family:'Fraunces',serif; font-size:1.05rem;}
+  #form-success{color:var(--green-2);}
+  #form-error{color:var(--navy);}
+
+  /* FOOTER */
+  footer{padding:52px 0 30px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:36px; margin-bottom:40px;}
+  .foot-logo-img{height:60px; width:auto; display:block; margin-bottom:14px;}
+  .foot-brand p{color:var(--cream-dim); font-size:0.9rem; line-height:1.6; max-width:270px;}
+  .foot-col h4{font-size:0.84rem; color:var(--accent-dark); margin-bottom:14px;}
+  .foot-col ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;}
+  .foot-col a{font-size:0.87rem; color:var(--cream-dim);}
+  .foot-col a:hover{color:var(--accent-dark);}
+  .foot-bottom{border-top:1px solid var(--line-dark); padding-top:22px; display:flex; justify-content:space-between; font-size:0.8rem; color:var(--cream-dim); flex-wrap:wrap; gap:10px;}
+
+  .cursor-dot{position:fixed; top:0; left:0; width:12px; height:12px; border-radius:50%; background:transparent; border:1px solid var(--navy); pointer-events:none; z-index:300; transform:translate(-50%,-50%); transition:width 0.2s, height 0.2s, background 0.2s, border-color 0.2s;}
+
+  @media (max-width: 900px){
+    .hero-grid, .about-grid, .sourcing-grid, .contact-grid, .process-grid{grid-template-columns:1fr;}
+    .process-sticky{position:relative; top:0; height:280px;}
+    .stat-strip{grid-template-columns:repeat(2,1fr);}
+    .why-grid, .lot-grid{grid-template-columns:1fr;}
+    .why-card, .why-card.big, .why-card.wide-top, .why-card.mid, .why-card.tall, .why-card.wide-bottom, .why-card.small{grid-column:auto; grid-row:auto; min-height:auto;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .navlinks{display:none; position:absolute; top:100%; left:0; right:0; background:var(--navy-deep); flex-direction:column; padding:16px 28px; border-bottom:1px solid var(--line-dark); gap:16px;}
+    .navlinks.open{display:flex;}
+    .menu-toggle{display:block;}
+    .form-row{grid-template-columns:1fr;}
+    .hero{height:auto; min-height:640px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#home">
+      <img class="mark" src="images/logo-icon.png" alt="Peakfinity Enterprise logo">
+      Peakfinity Enterprise
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="#about" data-section="about">About</a>
+      <a href="#process" data-section="process">Process</a>
+      <a href="#products" data-section="products">Products</a>
+      <a href="#sourcing" data-section="sourcing">Sourcing</a>
+      <a href="#contact" data-section="contact">Export Inquiries</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navlinks">☰</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active"><img src="images/cashew-tree.jpg" alt="Fresh cashew apples and nuts on the tree"></div>
+    <div class="hero-slide"><img src="images/shea-nut.jpg" alt="Shea nuts and raw shea butter"></div>
+    <div class="hero-slide"><img src="images/soybeans.jpg" alt="Harvested soybeans"></div>
+    <div class="hero-slide"><img src="images/cashew-raw.jpg" alt="Raw cashew nuts in sacks"></div>
+  </div>
+  <div class="hero-content">
+    <span class="eyebrow">Ghana · Sourcing &amp; Export House</span>
+    <h1>Three commodities. One disciplined export pipeline.</h1>
+    <p class="lede">Peakfinity Enterprise aggregates shea butter, soybeans and cashew nuts directly from cooperative networks across Ghana, and moves them to global buyers as clean, graded, export-ready cargo.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-primary">Request Export Quote</a>
+      <a href="#products" class="btn btn-ghost">View Our Products</a>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots">
+    <button class="active" data-i="0" aria-label="Slide 1"></button>
+    <button data-i="1" aria-label="Slide 2"></button>
+    <button data-i="2" aria-label="Slide 3"></button>
+    <button data-i="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>SCROLL</div>
+</section>
+
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>SHEA BUTTER — RAW &amp; REFINED</span><span class="dot-sep">•</span>
+    <span>SOYBEANS — FEED &amp; FOOD GRADE</span><span class="dot-sep">•</span>
+    <span>CASHEW NUTS — RCN &amp; KERNEL</span><span class="dot-sep">•</span>
+    <span>FOB TEMA &amp; TAKORADI</span><span class="dot-sep">•</span>
+    <span>24H QUOTE TURNAROUND</span><span class="dot-sep">•</span>
+    <span>SHEA BUTTER — RAW &amp; REFINED</span><span class="dot-sep">•</span>
+    <span>SOYBEANS — FEED &amp; FOOD GRADE</span><span class="dot-sep">•</span>
+    <span>CASHEW NUTS — RCN &amp; KERNEL</span><span class="dot-sep">•</span>
+    <span>FOB TEMA &amp; TAKORADI</span><span class="dot-sep">•</span>
+    <span>24H QUOTE TURNAROUND</span><span class="dot-sep">•</span>
+  </div>
+</div>
+
+<div class="stat-strip reveal-stagger" id="statStrip">
+  <div class="stat-cell r-item"><div class="num" data-count="3" data-suffix="">0</div><div class="lbl">Commodities aggregated</div></div>
+  <div class="stat-cell r-item"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">Traceable to source</div></div>
+  <div class="stat-cell r-item"><div class="num">FOB</div><div class="lbl">Tema &amp; Takoradi ports</div></div>
+  <div class="stat-cell r-item"><div class="num" data-count="24" data-suffix="h">0</div><div class="lbl">Quote turnaround</div></div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap about-grid reveal">
+    <div>
+      <span class="eyebrow">About Peakfinity</span>
+      <h2>Built on aggregation, not just ambition.</h2>
+      <p>Peakfinity Enterprise exists to close the gap between Ghana's smallholder and cooperative producers and the international buyers who need consistent, graded volume. We don't grow every tonne ourselves — we build the aggregation, quality control and logistics discipline that turns scattered supply into a dependable export product.</p>
+      <p>Our starting commodities — shea butter, soybeans and cashew nuts — were chosen because each has strong existing production in Ghana, a clear global buyer base, and room for a sourcing partner who takes traceability and grading seriously.</p>
+    </div>
+    <div class="pillar-list">
+      <div class="pillar"><span class="pnum">01</span><div><h4>Aggregation over ownership</h4><p>We work with cooperatives and processing groups across producing regions, consolidating volume no single farm gate could offer alone.</p></div></div>
+      <div class="pillar"><span class="pnum">02</span><div><h4>Grading before shipment</h4><p>Every lot is checked against export specification — moisture, purity, free fatty acid or aflatoxin thresholds — before it's booked.</p></div></div>
+      <div class="pillar"><span class="pnum">03</span><div><h4>Fair, transparent buyback</h4><p>Producer groups are paid on published price schedules, so the incentive to supply quality volume compounds each season.</p></div></div>
+      <div class="pillar"><span class="pnum">04</span><div><h4>Built for repeat buyers</h4><p>We are structuring Peakfinity around long-term offtake relationships, not one-off spot sales.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="process dark" id="process">
+  <div class="wrap process-grid">
+    <div class="process-sticky" id="processSticky">
+      <img src="images/soybeans.jpg" alt="Cooperative groups delivering harvest" class="active" data-step="0">
+      <img src="images/shea-nut.jpg" alt="Grading and processing shea nuts" data-step="1">
+      <img src="images/cashew-raw.jpg" alt="Export-ready cashew nuts" data-step="2">
+    </div>
+    <div class="process-steps" id="processSteps">
+      <div class="p-step active" data-n="1">
+        <span class="eyebrow">From Aggregation to Vessel</span>
+        <h4>Aggregation</h4>
+        <p>Cooperative groups deliver harvest to regional collection points within a day's transport, reducing spoilage and post-harvest loss before grading even starts.</p>
+      </div>
+      <div class="p-step" data-n="2">
+        <h4>Grading &amp; Processing</h4>
+        <p>Moisture, purity and — for shea — free fatty acid content are checked lot by lot against export specification before anything is booked for shipment.</p>
+      </div>
+      <div class="p-step" data-n="3">
+        <h4>Export, FOB Ghana</h4>
+        <p>Consolidated, documented and shipped FOB Tema or Takoradi, with LC, TT or trade insurance terms agreed with the buyer in advance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="why-head reveal">
+      <span class="eyebrow">Why Peakfinity</span>
+      <h2>What a buyer gets working with us</h2>
+      <p>We're building the operating discipline of an export house from day one — the kind of groundwork that reduces risk for the first container as much as the fiftieth.</p>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-card big" data-idx="01"><h4><span class="pulse-dot"></span>Multi-Commodity Sourcing</h4><p>One relationship, three commodities — simplifying procurement for buyers who need more than a single product line. As new aggregation points come online, the same relationship scales with them.</p></div>
+      <div class="why-card wide-top" data-idx="02"><h4>Cooperative Network</h4><p>Direct relationships with producer groups across Ghana's shea, soy and cashew belts, cutting out unreliable middlemen.</p></div>
+      <div class="why-card mid" data-idx="03"><h4>Grading Discipline</h4><p>Held to spec before shipment, not sold on trust.</p></div>
+      <div class="why-card tall" data-idx="04"><h4>Traceability</h4><p>Every lot tracks back to its aggregation point and producer group — buyers can ask where a specific bag came from.</p></div>
+      <div class="why-card wide-bottom" data-idx="05"><h4>Flexible Volume</h4><p>From trial containers to recurring bulk orders, as the aggregation network scales with demand.</p></div>
+      <div class="why-card small" data-idx="06"><h4>Trade Terms</h4><p>FOB Ghana, LC/TT options.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="products-head reveal">
+      <span class="eyebrow">Our Products</span>
+      <h2>Three cargo lots, export-graded</h2>
+    </div>
+
+    <div class="lot-grid reveal-stagger">
+      <div class="lot-card shea r-item">
+        <div class="lot-photo-wrap"><span class="lot-tag">Lot 01</span><img class="lot-photo" src="images/shea-nut.jpg" alt="Shea nuts and raw shea butter"></div>
+        <div class="lot-top" data-num="01"><h3>Shea Butter</h3><div class="lot-grade">Raw &amp; Refined Grade</div></div>
+        <p class="desc">Hand-processed and refined shea butter sourced from women-led cooperative groups across Ghana's shea belt, for cosmetic and food-grade buyers.</p>
+        <ul class="lot-specs">
+          <li><span>Free Fatty Acid</span><b>≤ 1%</b></li>
+          <li><span>Moisture</span><b>≤ 0.2%</b></li>
+          <li><span>Forms</span><b>Raw block / Refined</b></li>
+        </ul>
+        <button class="lot-expand-btn" type="button" aria-expanded="false">Packaging &amp; lead time <span class="chev">▾</span></button>
+        <div class="lot-more"><img class="pack-thumb" src="images/shea-butter-packaged.jpg" alt="Packaged shea butter ready for export">Packed in 20kg / 25kg drums or block-wrapped cartons. Typical lead time from confirmed order is 3–4 weeks, depending on volume and season.</div>
+        <div class="lot-foot"><span>MOQ 300 kg</span><a href="#contact">Get quote →</a></div>
+      </div>
+
+      <div class="lot-card soy r-item">
+        <div class="lot-photo-wrap"><span class="lot-tag">Lot 02</span><img class="lot-photo" src="images/soybeans.jpg" alt="Harvested soybeans, close up"></div>
+        <div class="lot-top" data-num="02"><h3>Soybeans</h3><div class="lot-grade">Feed &amp; Food Grade</div></div>
+        <p class="desc">Aggregated soybeans from Ghana's northern growing corridors, cleaned and graded for animal feed processors and food-grade buyers.</p>
+        <ul class="lot-specs">
+          <li><span>Protein Content</span><b>≥ 36%</b></li>
+          <li><span>Moisture</span><b>≤ 12%</b></li>
+          <li><span>Purity</span><b>≥ 98%</b></li>
+        </ul>
+        <button class="lot-expand-btn" type="button" aria-expanded="false">Packaging &amp; lead time <span class="chev">▾</span></button>
+        <div class="lot-more">Delivered in 50kg or 100kg woven bags on pallets. Typical lead time is 2–3 weeks post-harvest, faster once in-season stock is aggregated.</div>
+        <div class="lot-foot"><span>MOQ 1 ton</span><a href="#contact">Get quote →</a></div>
+      </div>
+
+      <div class="lot-card cashew r-item">
+        <div class="lot-photo-wrap"><span class="lot-tag">Lot 03</span><img class="lot-photo" src="images/cashew-raw.jpg" alt="Raw cashew nuts in sacks, ready for grading"></div>
+        <div class="lot-top" data-num="03"><h3>Cashew Nuts</h3><div class="lot-grade">RCN &amp; Kernel</div></div>
+        <p class="desc">Raw cashew nuts and processed kernels sourced from cooperative farms, graded by nut count and outturn for international processors.</p>
+        <ul class="lot-specs">
+          <li><span>Outturn (KOR)</span><b>48–52 lbs</b></li>
+          <li><span>Moisture</span><b>≤ 10%</b></li>
+          <li><span>Forms</span><b>RCN / W320 kernel</b></li>
+        </ul>
+        <button class="lot-expand-btn" type="button" aria-expanded="false">Packaging &amp; lead time <span class="chev">▾</span></button>
+        <div class="lot-more">RCN shipped in 80kg jute bags; kernels vacuum-packed in cartons. Typical lead time is 4–6 weeks depending on season and processing stage requested.</div>
+        <div class="lot-foot"><span>MOQ 1 ton</span><a href="#contact">Get quote →</a></div>
+      </div>
+    </div>
+
+    <div class="spec-table-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Shea Butter</th><th>Soybeans</th><th>Cashew Nuts</th></tr></thead>
+        <tbody>
+          <tr><td>Grade Standard</td><td>Cosmetic / Food</td><td>Feed / Food</td><td>Export RCN / Kernel</td></tr>
+          <tr><td>Moisture Content</td><td>≤ 0.2%</td><td>≤ 12%</td><td>≤ 10%</td></tr>
+          <tr><td>Shelf Life</td><td>24 months</td><td>12 months</td><td>12 months (RCN)</td></tr>
+          <tr><td>Min Order</td><td>300 kg</td><td>1 ton</td><td>1 ton</td></tr>
+          <tr><td>Packaging</td><td>Drums / Blocks</td><td>50–100 kg bags</td><td>Jute bags, 80 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sourcing" id="sourcing">
+  <div class="wrap sourcing-grid reveal">
+    <div>
+      <span class="eyebrow">Our Sourcing Network</span>
+      <h2>Aggregation points across Ghana's producing belts</h2>
+      <p>Rather than a single farm, Peakfinity's model is a network of cooperative aggregation points, each specialized in the commodity best suited to its region — then consolidated for export at central processing and inspection hubs.</p>
+      <div class="region-list">
+        <div class="region"><span class="rname">Northern &amp; Savannah Belt</span><span class="rgoods">Shea Butter</span></div>
+        <div class="region"><span class="rname">Bono &amp; Bono East</span><span class="rgoods">Soybeans</span></div>
+        <div class="region"><span class="rname">Ahafo &amp; Bono</span><span class="rgoods">Cashew Nuts</span></div>
+      </div>
+    </div>
+    <div class="sourcing-photo">
+      <img src="images/cashew-tree.jpg" alt="Cashew apples and nuts growing on the tree in Ghana">
+      <figcaption>Cashew, straight from the source</figcaption>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid reveal">
+    <div>
+      <span class="eyebrow">Export Inquiries</span>
+      <h2>Request a quote for bulk orders</h2>
+      <p class="lede">Tell us the commodity, volume, and destination, and our team responds with indicative FOB pricing within 24 hours.</p>
+      <div class="info-block"><span class="eyebrow">Location</span><div>Ghana, West Africa</div></div>
+      <div class="info-block"><span class="eyebrow">Email</span><div><a href="mailto:info@peakfinityenterprise.com">info@peakfinityenterprise.com</a></div></div>
+      <div class="info-block"><span class="eyebrow">Business Hours</span><div>Mon – Fri: 8:00 AM – 6:00 PM GMT</div></div>
+    </div>
+
+    <form id="quote-form" action="#" method="POST" novalidate>
+      <h3>Request Export Quote</h3>
+      <div id="form-fields">
+        <div class="form-row">
+          <div><label for="company">Company Name *</label><input id="company" name="company" required autocomplete="organization"></div>
+          <div><label for="contact-person">Contact Person *</label><input id="contact-person" name="contact_person" required autocomplete="name"></div>
+        </div>
+        <div class="form-row">
+          <div><label for="email">Email Address *</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+          <div><label for="country">Country *</label>
+            <select id="country" name="country" required>
+              <option value="">Select Country</option>
+              <option>United States</option><option>United Kingdom</option><option>Germany</option>
+              <option>Netherlands</option><option>India</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div><label for="product">Primary Product Interest *</label>
+            <select id="product" name="product" required>
+              <option value="">Select Product</option>
+              <option>Shea Butter (Raw/Refined)</option>
+              <option>Soybeans (Feed/Food Grade)</option>
+              <option>Cashew Nuts (RCN/Kernel)</option>
+              <option>Mixed Order</option>
+            </select>
+          </div>
+          <div><label for="volume">Expected Monthly Volume</label>
+            <select id="volume" name="volume">
+              <option value="">Select Volume</option>
+              <option>300 kg – 1 ton</option><option>1–5 tons</option><option>5–10 tons</option><option>10+ tons</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div><label for="notes">Additional Notes</label><input id="notes" name="notes" placeholder="Anything else we should know"></div>
+        </div>
+        <button type="submit" id="submit-btn">Send Export Inquiry</button>
+        <p class="form-note">Your information is secure and will only be used for this inquiry.</p>
+      </div>
+      <div id="form-success">Thank you — your inquiry has been noted.<br>Our team will follow up by email.</div>
+      <div id="form-error">Something went wrong sending that. Please email us directly at info@peakfinityenterprise.com.</div>
+    </form>
+  </div>
+</section>
+
+<footer class="dark">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img class="foot-logo-img" src="images/logo-full.png" alt="Peakfinity Enterprise logo">
+        <p>Sourcing, aggregating and exporting Ghana's shea butter, soybeans and cashew nuts to global buyers.</p>
+      </div>
+      <div class="foot-col"><h4>Products</h4><ul><li><a href="#products">Shea Butter</a></li><li><a href="#products">Soybeans</a></li><li><a href="#products">Cashew Nuts</a></li></ul></div>
+      <div class="foot-col"><h4>Company</h4><ul><li><a href="#about">About Peakfinity</a></li><li><a href="#sourcing">Sourcing Network</a></li><li><a href="#why">Why Us</a></li></ul></div>
+      <div class="foot-col"><h4>Export Services</h4><ul><li><a href="#contact">Bulk Orders</a></li><li><a href="#contact">Export Quotes</a></li><li><a href="#contact">Logistics</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Peakfinity Enterprise. All rights reserved.</span><span>Ghana, West Africa</span></div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navlinks');
+  toggle.addEventListener('click', function(){
+    var isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ links.classList.remove('open'); }); });
+
+  // Header shrink/shadow on scroll
+  var siteHeader = document.querySelector('header');
+  window.addEventListener('scroll', function(){
+    if (siteHeader) siteHeader.classList.toggle('scrolled', window.scrollY > 24);
+  }, {passive:true});
+
+  // Custom cursor dot (desktop pointer devices only)
+  if (window.matchMedia('(pointer:fine)').matches){
+    var cursor = document.createElement('div');
+    cursor.className = 'cursor-dot';
+    document.body.appendChild(cursor);
+    window.addEventListener('mousemove', function(e){
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    }, {passive:true});
+    document.querySelectorAll('a, button, .lot-card, .route-step, .why-card').forEach(function(el){
+      el.addEventListener('mouseenter', function(){
+        cursor.style.width = '30px'; cursor.style.height = '30px'; cursor.style.background = 'rgba(22,60,133,0.08)';
+      });
+      el.addEventListener('mouseleave', function(){
+        cursor.style.width = '12px'; cursor.style.height = '12px'; cursor.style.background = 'transparent';
+      });
+    });
+  }
+
+  // Subtle tilt on product photos and sourcing photo (desktop only)
+  if (window.matchMedia('(pointer:fine)').matches){
+    document.querySelectorAll('.lot-photo-wrap, .sourcing-photo').forEach(function(card){
+      card.addEventListener('mousemove', function(e){
+        var r = card.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5;
+        var y = (e.clientY - r.top) / r.height - 0.5;
+        var img = card.querySelector('img');
+        if (img) img.style.transform = 'scale(1.06) perspective(700px) rotateY(' + (x * 6) + 'deg) rotateX(' + (-y * 6) + 'deg)';
+      });
+      card.addEventListener('mouseleave', function(){
+        var img = card.querySelector('img');
+        if (img) img.style.transform = '';
+      });
+    });
+  }
+
+  // Hero slideshow
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.hero-dots button');
+  var heroIdx = 0;
+  function showSlide(i){
+    slides.forEach(function(s,idx){ s.classList.toggle('active', idx===i); });
+    dots.forEach(function(d,idx){ d.classList.toggle('active', idx===i); });
+    heroIdx = i;
+  }
+  var heroTimer = setInterval(function(){ showSlide((heroIdx+1) % slides.length); }, 5000);
+  dots.forEach(function(d){
+    d.addEventListener('click', function(){
+      clearInterval(heroTimer);
+      showSlide(parseInt(d.getAttribute('data-i'),10));
+      heroTimer = setInterval(function(){ showSlide((heroIdx+1) % slides.length); }, 5000);
+    });
+  });
+
+  // Scroll reveal
+  var revealTargets = document.querySelectorAll('.reveal, .reveal-stagger');
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, {threshold:0.15});
+    revealTargets.forEach(function(el){ io.observe(el); });
+  } else {
+    revealTargets.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // Count-up
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var start = null; var duration = 900;
+    function step(ts){
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      el.textContent = Math.floor(progress * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step); else el.textContent = target + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  var statStrip = document.getElementById('statStrip');
+  if (statStrip && 'IntersectionObserver' in window){
+    var statIo = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){ statStrip.querySelectorAll('[data-count]').forEach(animateCount); statIo.unobserve(entry.target); }
+      });
+    }, {threshold:0.4});
+    statIo.observe(statStrip);
+  }
+
+  // Nav active-section highlighting
+  var sectionIds = ['about','process','products','sourcing','contact'];
+  var sections = sectionIds.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  var navAnchors = document.querySelectorAll('.navlinks a[data-section]');
+  if (sections.length && 'IntersectionObserver' in window){
+    var navIo = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          navAnchors.forEach(function(a){ a.classList.toggle('active', a.getAttribute('data-section') === entry.target.id); });
+        }
+      });
+    }, {threshold:0, rootMargin:'-45% 0px -45% 0px'});
+    sections.forEach(function(s){ navIo.observe(s); });
+  }
+
+  // Lot card expand
+  document.querySelectorAll('.lot-expand-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.lot-card');
+      var isOpen = card.classList.toggle('expanded');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+
+  // Process scrollytelling: sync sticky image + active step to scroll position
+  var pSteps = document.querySelectorAll('.p-step');
+  var pImages = document.querySelectorAll('#processSticky img');
+  if (pSteps.length){
+    var pTicking = false;
+    function updateProcessStep(){
+      var center = window.innerHeight / 2;
+      var closestIdx = 0, closestDist = Infinity;
+      pSteps.forEach(function(step, idx){
+        var r = step.getBoundingClientRect();
+        var stepCenter = r.top + r.height / 2;
+        var dist = Math.abs(stepCenter - center);
+        if (dist < closestDist){ closestDist = dist; closestIdx = idx; }
+      });
+      pSteps.forEach(function(s, idx){ s.classList.toggle('active', idx === closestIdx); });
+      pImages.forEach(function(img){ img.classList.toggle('active', parseInt(img.getAttribute('data-step'), 10) === closestIdx); });
+      pTicking = false;
+    }
+    window.addEventListener('scroll', function(){
+      if (!pTicking){ pTicking = true; requestAnimationFrame(updateProcessStep); }
+    }, {passive:true});
+    window.addEventListener('resize', updateProcessStep, {passive:true});
+    updateProcessStep();
+  }
+
+  // Contact form (static demo — see README for wiring to a real backend)
+  var form = document.getElementById('quote-form');
+  var fields = document.getElementById('form-fields');
+  var success = document.getElementById('form-success');
+  var submitBtn = document.getElementById('submit-btn');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    setTimeout(function(){ fields.style.display = 'none'; success.style.display = 'block'; }, 500);
+  });
+</script>
+</body>
+</html>
